@@ -27,7 +27,7 @@ app.get("/bmiCalculator", (req, res) => {
     res.sendFile(__dirname + "/bmiCalculator.html");
 });
 
-app.get("/bmicalculator", (req, res) => {
+app.post("/bmicalculator", (req, res) => {
   var weight = parseFloat(req.body.weight);
   var height = parseFloat(req.body.height);
 
